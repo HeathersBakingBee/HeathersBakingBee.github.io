@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<title> Heather's Baking Bee </title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+<!-- link href="css/swing.css" rel="stylesheet" type="text/css" -->
+<link href="css/pics.css" rel="stylesheet" type="text/css">
+	<link href="css/form.css" rel="stylesheet" type="text/css">
+	<link rel="canonical" href="https://www.fbdemo.com/captcha/index.html" />
+
+<style>
+	html, body {padding:0; margin:0; outline:0; border:0; width:100vw; background-image: url(images/tile.jpg);}
+
+.miniIconPanel {width:30px; height:23px; padding:6px; background:#fff; border-radius:8px; position:absolute; top: 375px; left: 40px; box-shadow:0 0 3px rgba(0,0,0,0.5);} 
+.miniMenu {position:relative; width:30px; height:23px; margin:50px 0 250px 0; /* this demo only */}
+.miniMenu input {display:none;}
+.miniMenu label {display:block; width:44px; height:37px; position:absolute; left:-1px; top:-1px; z-index:10; cursor:pointer;}
+.miniMenu div.miniIcon {display:block; width:30px; height:13px; position:absolute; left:6px; top:6px; border:5px solid #000; border-width:5px 0; z-index:5;
+-webkit-transition:0.5s;
+-moz-transition:0.5s;
+-o-transition:0.5s;
+transition:0.5s;
+}
+.miniMenu div.miniIcon b {display:block; width:30px; height:5px; background:#000; position:absolute; left:0; top:4px; opacity:1;
+-webkit-transition:0.5s;
+-moz-transition:0.5s;
+-o-transition:0.5s;
+transition:0.5s;
+}
+.miniMenu ul {padding:0; margin:0; list-style:none; position:absolute; top:0; left:50px; width:200px; opacity:0; visibility:hidden;
+-webkit-transition:0.5s;
+-moz-transition:0.5s;
+-o-transition:0.5s;
+transition:0.5s;
+}
+.miniMenu li {display:block; float:left; position:relative; z-index:10;}
+.miniMenu #open:checked ~ .labelOpen {z-index:5;}
+.miniMenu #close:checked ~ .labelClose {z-index:5;}
+.miniMenu #open:checked ~ div b:first-child {
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-ms-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+.miniMenu #open:checked ~ div.miniIcon {
+border-color:transparent;
+}
+.miniMenu #open:checked ~ div b:last-child {
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-ms-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+.miniMenu #open:checked ~ ul {visibility:visible; opacity:1;}
+.miniMenu li a {display:block; font:600 14px/40px 'Open Sans', arial, sans-serif; text-align:center; height:40px; width:200px; position:relative; text-decoration:none; color:#eef;
+
+}
+.miniMenu li:hover {z-index:100;}
+.miniMenu li a:hover {color:#80c080; line-height:41px; width:198px; margin-left:1px;
+text-shadow:0 0 1px #000, 0 0 5px rgba(128,192,128,0.9);
+box-shadow: 
+inset 0 0 4px 3px rgba(0,0,0,0.2), 
+inset 0 0 10px rgba(0,0,0,0.5);
+}
+.miniMenu li:first-child a {border-radius:8px 8px 0 0;}
+.miniMenu li:last-child a {border-radius:0 0 8px 8px;}
+.miniMenu li a:hover:before {content:""; display:block; width:190px; height:1px; position:absolute; left:10px; top:-1px;
+background: linear-gradient(to right, rgba(128,192,128,0) 0%, #80c080 50%, rgba(128,192,128,0) 100%);
+}
+.miniMenu li a:hover:after {content:""; display:block; width:190px; height:1px; position:absolute; left:10px; bottom:-1px;
+background: linear-gradient(to right, rgba(128,192,128,0) 0%, #80c080 50% ,rgba(128,192,128,0) 100%);
+}
+
+	
+	.box img {
+	margin-left: 30px;
+	width: 300px;
+	height: auto;
+}
+	
+
+p.social{
+   position:absolute;
+    width:10px;
+    height:10px;
+    border-bottom:5px solid #dfdfdf;
+    border-right:5px solid #dfdfdf;
+    left:350px;
+	top: 50px;
+}
+
+
+	</style>
+
+
+</head>
+
+<body>
+	<a href="#" title="Home Page"> 
+	<div class="box">
+	  <img class="sp-icon-1" src="images/menuM.png" style="z-index: 10; float: left; box-shadow: 15px 10px 18px #888888;">
+	  </div>
+	</a>
+<p></p>
+	
+
+<div class="miniMenu" onclick="">
+	<div class="miniIconPanel">
+		<input type="radio" name="miniMenu" id="open" />
+		<input type="radio" name="miniMenu" id="close" checked="checked" />
+		<label class="labelOpen" for="open" title="Open Menu"></label>
+		<label class="labelClose" for="close" title="Close Menu"></label>
+		<div class="miniIcon"><b></b><b></b></div>
+		<ul>
+			<li><a href="order.htm">Yummies</a></li>
+			<li><a href="bio.htm">Meet the Baker</a></li>
+			<li><a href="index.html">Testimonials</a></li>
+			<li><a href="index.html">Gallery</a></li>
+			<li><a href="index.html">Contact Us</a></li>
+		</ul>
+	</div>
+</div>
+		<p class="social">
+			<a href="https://www.facebook.com/HeathersBakingBee/"><img src="images/facebook.png"></a><br>
+			<a href="https://www.instagram.com/heathersbakingbee/"><img src="images/instagram.png"></a>
+			</p>			
+	
+
+</body>
+</html>
